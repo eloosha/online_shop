@@ -77,8 +77,12 @@ def test_new_product():
 def test_products_getter(my_category):
     result = my_category.products
 
-    assert result[0] == "Арбуз, 300 руб. Остаток: 10"
-    assert result[1] == "Мандарин, 25 руб. Остаток: 25"
+    assert result == (
+        "Арбуз, 300 руб. Остаток: 10 шт.\n"
+        "Мандарин, 25 руб. Остаток: 25 шт.\n"
+        "Яблоко, 55 руб. Остаток: 15 шт.\n"
+        "Банан, 45 руб. Остаток: 5 шт.\n"
+    )
 
 
 def test_add_product(my_category):

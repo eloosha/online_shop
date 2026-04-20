@@ -65,15 +65,13 @@ class Category:
 
     @property
     def products(self):
-        # создаем список строк для отображения продуктов
-        product_list = []
+        # создаем переменную куда будем добавлять строки для отображения продуктов
+        product_str = ""
 
         # преобразуем каждый продукт в строку под наш формат
         for product in self._products:
-            product_str = (
-                f"{product.name}, {product.price} руб. Остаток: {product.quantity}шт.\n"
-            )
-            product_list.append(product_str)
+            result = f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
+            product_str += result
 
-        # возвращаем готовый список строк
-        return product_list
+        # возвращаем готовые строки
+        return product_str
