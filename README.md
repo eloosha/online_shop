@@ -32,9 +32,9 @@ python manage.py runserver
 
 ## Использование:
 
-1. В модуле main.py находятся классы
-2. В модуле utils.py находятся функции чтения файлов JSON
-3. В модуле test_main.py, conftest.py находятся тесты.
+1. В main.py находятся классы
+2. В utils.py находятся функции чтения файлов JSON
+3. В test_main.py, conftest.py находятся тесты и фикстуры.
 
 
 ## Тестирование
